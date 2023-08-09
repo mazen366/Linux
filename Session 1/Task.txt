@@ -1,0 +1,44 @@
+1-
+mkdir "Mazen Hassan"
+cd Mazen\ Hassan/
+
+2-
+mkdir Documents
+touch file1.txt file2.txt file3.txt
+ls
+
+3-
+cd ..
+touch .hidden_file
+ls -a
+
+4-
+
+nano Documents/file1.txt 
+Hello World
+Control X
+Enter
+cat Documents/file1.txt
+
+5-
+cd Documents/
+
+6-
+mkdir -
+cd -
+
+7-
+cp -r  ~/Documents/ ~/My_Documents
+ls ~
+
+8-
+cat ~/.hidden_file
+
+9-
+mv file2.txt file3.txt ~
+ls ~
+
+10-
+cd ~
+rm -r Mazen\ Hassan/
+ls
