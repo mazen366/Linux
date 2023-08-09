@@ -4,6 +4,7 @@ cd Mazen\ Hassan/
 
 2-
 mkdir Documents
+cd Documents
 touch file1.txt file2.txt file3.txt
 ls
 
