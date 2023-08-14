@@ -1,1 +1,31 @@
+cd Downloads/
+unzip Updated-Task-02.zip
+cd Updated-Task-02
+cat README.txt
+
+ls -a
+tar -x -f .level-1.tar
+ls -a
+cd .level-1
+ls 
+cat README.txt
+
+
+tar -x -f level-2
+ls
+cd level-2
+ls
+cat README.txt
+
+
+find -name level-3
+cd gBT5u0vLT5/
+ls
+tar -x -f level-3
+ls
+cd level-3
+ls
+cat README.txt
+ls -li
+cat X6lkChFKsj
 
