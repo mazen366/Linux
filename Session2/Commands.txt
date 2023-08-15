@@ -29,3 +29,6 @@ cat README.txt
 ls -li
 cat X6lkChFKsj
 
+find -size 73b
+
+
