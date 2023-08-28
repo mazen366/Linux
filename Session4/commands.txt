@@ -1,1 +1,104 @@
+1-
+touch system_info.sh
+nano system_info.sh 
+#!/bin/bash
+echo "Username: $USER"
+kernel_version=$(uname -r)
+echo "Kernel Version: $kernel_version"
+chmod +x system_info.sh
+./system_info.sh
+
+
+
+2-
+cd Documents/
+echo "Hello world!" > test.txt
+cd ..
+touch file_check.sh
+#!/bin/bash
+
+filename=$1
+filepath=$2
+filepath="$filepath/$filename"
+if [[ -e "$filepath"  ]]
+then
+cat "$filepath"
+else
+echo "File does not exist"
+fi
+
+chmod +x file_check.sh
+./file_chec.sh test.txt ~/Documents
+
+
+3-
+
+mkdir task3
+cd task3
+touch lion.png tiger.png cat.jpg dog.jpg text.txt rename_files.sh session1.pdf
+ls
+nano rename_file.sh
+#!/bin/bash
+
+change=$1
+name=$2
+ctr=1
+for file in $(ls)
+do
+extension="${file##*.}"
+if [[ $extension = $change ]]
+then
+cp $file "$name$ctr.$extension" 
+ctr=$(($ctr + 1))
+fi
+done
+
+chmod +x rename_files.sh
+./rename_file.sh png test
+ls
+
+
+
+
+
+
+4- 
+touch calculator.sh
+nano calculator.sh
+
+
+#!/bin/bash
+echo "1. Addition"
+echo "2. Substraction"
+echo "3. Multiplication"
+echo "5. Exit"
+read -p "Enter your choice: " choice
+if [[ $choice  = 5 ]] 
+then
+echo "Exiting .."
+else
+        read -p "Enter the first number: " num1
+        read -p "Enter the second number: " num2
+        if [[ $choice = 1 ]]
+        then
+        echo "$num1 + $num2 = $(($num1+$num2))"
+        elif [[ $choice = 2 ]]
+        then
+        echo "$num1 - $num2 = $(($num1-$num2))"
+        else 
+        echo "$num1 * $num2 = $(($num1*$num2))"
+        fi
+fi
+
+
+chmod +x calculator.sh
+./calculator.sh
+3
+5
+2
+./calulator.sh
+5
+
+
+
 
